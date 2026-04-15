@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.project189.databinding.FragmentCambodiaBinding
 import com.project189.ui.common.TourAdapter
 import com.project189.viewmodel.CambodiaViewModel
@@ -31,7 +31,8 @@ class CambodiaFragment : Fragment() {
 
         adapter = TourAdapter()
         binding.rvCambodiaDestinations.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            // Using GridLayoutManager for a grid look
+            layoutManager = GridLayoutManager(requireContext(), 2)
             this.adapter = this@CambodiaFragment.adapter
         }
 

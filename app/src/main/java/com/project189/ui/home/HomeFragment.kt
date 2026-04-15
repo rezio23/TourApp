@@ -12,7 +12,6 @@ import com.project189.ui.common.BannerAdapter
 import com.project189.ui.common.CategoryAdapter
 import com.project189.ui.common.TourAdapter
 import com.project189.viewmodel.HomeViewModel
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 
 class HomeFragment : Fragment() {
 
@@ -68,7 +67,7 @@ class HomeFragment : Fragment() {
     private fun setupPopularList() {
         popularAdapter = TourAdapter()
         binding.rvPopular.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             adapter = popularAdapter
         }
     }
