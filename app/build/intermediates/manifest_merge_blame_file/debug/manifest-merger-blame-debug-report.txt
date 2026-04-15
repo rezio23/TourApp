@@ -1,0 +1,179 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.project189"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:5:5-69
+12-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:5:22-66
+13
+14    <permission
+14-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.project189.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.project189.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:7:5-35:19
+21        android:allowBackup="true"
+21-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.12.0] C:\Users\Rezio\.gradle\caches\transforms-3\05365192e8c93a127ae620124358980f\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:icon="@mipmap/ic_launcher"
+25-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:9:9-43
+26        android:label="@string/app_name"
+26-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:10:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:11:9-54
+28        android:supportsRtl="true"
+28-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:12:9-35
+29        android:testOnly="true"
+30        android:theme="@style/Theme.Project189" >
+30-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:13:9-48
+31        <activity
+31-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:15:9-23:20
+32            android:name="com.project189.ui.splash.SplashActivity"
+32-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:16:13-53
+33            android:exported="true"
+33-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:17:13-36
+34            android:theme="@style/Theme.Project189.Splash" >
+34-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:18:13-59
+35            <intent-filter>
+35-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:19:13-22:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:20:17-69
+36-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:20:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:21:17-77
+38-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:21:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:25:9-28:58
+42            android:name="com.project189.ui.splash.MainActivity"
+42-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:26:13-51
+43            android:exported="false"
+43-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:27:13-37
+44            android:windowSoftInputMode="adjustResize" />
+44-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:28:13-55
+45        <activity
+45-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:30:9-33:58
+46            android:name="com.project189.ui.detail.DetailActivity"
+46-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:31:13-53
+47            android:exported="false"
+47-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:32:13-37
+48            android:windowSoftInputMode="adjustResize" />
+48-->D:\ACLEDA UNIVERSITY OF BUSINESS\ACLEDAY2\SEMESTER2\CS 218 - MOBILE DEVELOPMENT FOR ANDROID\mid\TourApp\app\src\main\AndroidManifest.xml:33:13-55
+49        <activity
+49-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Rezio\.gradle\caches\transforms-3\4e5fdb996d5860abd9ee020e38502162\transformed\jetified-ui-tooling-1.4.0\AndroidManifest.xml:23:9-25:39
+50            android:name="androidx.compose.ui.tooling.PreviewActivity"
+50-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Rezio\.gradle\caches\transforms-3\4e5fdb996d5860abd9ee020e38502162\transformed\jetified-ui-tooling-1.4.0\AndroidManifest.xml:24:13-71
+51            android:exported="true" />
+51-->[androidx.compose.ui:ui-tooling:1.4.0] C:\Users\Rezio\.gradle\caches\transforms-3\4e5fdb996d5860abd9ee020e38502162\transformed\jetified-ui-tooling-1.4.0\AndroidManifest.xml:25:13-36
+52
+53        <uses-library
+53-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+54            android:name="androidx.window.extensions"
+54-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+55            android:required="false" />
+55-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+56        <uses-library
+56-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+57            android:name="androidx.window.sidecar"
+57-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+58            android:required="false" />
+58-->[androidx.window:window:1.0.0] C:\Users\Rezio\.gradle\caches\transforms-3\c1300514d6b4537fa877c847be1f6a8c\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.project189.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\8029530e5c7e6185df1b47e16847747a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Rezio\.gradle\caches\transforms-3\b7cb16bd355c43e9583fd75d0fd2d988\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Rezio\.gradle\caches\transforms-3\b7cb16bd355c43e9583fd75d0fd2d988\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Rezio\.gradle\caches\transforms-3\b7cb16bd355c43e9583fd75d0fd2d988\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+72                android:value="androidx.startup" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+73        </provider>
+74
+75        <service
+75-->[androidx.room:room-runtime:2.6.1] C:\Users\Rezio\.gradle\caches\transforms-3\c2cd43fde83dd9a1a88da93eb036147e\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+76            android:name="androidx.room.MultiInstanceInvalidationService"
+76-->[androidx.room:room-runtime:2.6.1] C:\Users\Rezio\.gradle\caches\transforms-3\c2cd43fde83dd9a1a88da93eb036147e\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+77            android:directBootAware="true"
+77-->[androidx.room:room-runtime:2.6.1] C:\Users\Rezio\.gradle\caches\transforms-3\c2cd43fde83dd9a1a88da93eb036147e\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+78            android:exported="false" />
+78-->[androidx.room:room-runtime:2.6.1] C:\Users\Rezio\.gradle\caches\transforms-3\c2cd43fde83dd9a1a88da93eb036147e\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+79
+80        <receiver
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+81            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+82            android:directBootAware="false"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+83            android:enabled="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+84            android:exported="true"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+85            android:permission="android.permission.DUMP" >
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+87                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+90                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+93                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+96                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Rezio\.gradle\caches\transforms-3\5eac9415e8d6b763c24d366ea5a248f8\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+97            </intent-filter>
+98        </receiver>
+99    </application>
+100
+101</manifest>

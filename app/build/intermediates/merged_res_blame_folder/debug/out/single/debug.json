@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_item_category.xml.flat",
+        "source": "com.project189.app-main-76:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bell_icon.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bell_icon.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_activity_main.xml.flat",
+        "source": "com.project189.app-main-76:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bottom_btn3.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bottom_btn3.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_dash_line.png.flat",
+        "source": "com.project189.app-main-76:/drawable/dash_line.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_fragment_search.xml.flat",
+        "source": "com.project189.app-main-76:/layout/fragment_search.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_fragment_home.xml.flat",
+        "source": "com.project189.app-main-76:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_back.png.flat",
+        "source": "com.project189.app-main-76:/drawable/back.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_back_white.png.flat",
+        "source": "com.project189.app-main-76:/drawable/back_white.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_item_tour.xml.flat",
+        "source": "com.project189.app-main-76:/layout/item_tour.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bottom_btn2.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bottom_btn2.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_message.png.flat",
+        "source": "com.project189.app-main-76:/drawable/message.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_location.png.flat",
+        "source": "com.project189.app-main-76:/drawable/location.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_intro_pic.png.flat",
+        "source": "com.project189.app-main-76:/drawable/intro_pic.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.project189.app-main-76:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/navigation_nav_graph.xml.flat",
+        "source": "com.project189.app-main-76:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_activity_splash.xml.flat",
+        "source": "com.project189.app-main-76:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.project189.app-main-76:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_star.png.flat",
+        "source": "com.project189.app-main-76:/drawable/star.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_arrow_detail.png.flat",
+        "source": "com.project189.app-main-76:/drawable/arrow_detail.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_fragment_favorites.xml.flat",
+        "source": "com.project189.app-main-76:/layout/fragment_favorites.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_item_favorite.xml.flat",
+        "source": "com.project189.app-main-76:/layout/item_favorite.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_barcode.png.flat",
+        "source": "com.project189.app-main-76:/drawable/barcode.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bottom_btn1.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bottom_btn1.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_fav_icon.png.flat",
+        "source": "com.project189.app-main-76:/drawable/fav_icon.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bg_category_item.xml.flat",
+        "source": "com.project189.app-main-76:/drawable/bg_category_item.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/color_nav_item_color.xml.flat",
+        "source": "com.project189.app-main-76:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bottom_btn4.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bottom_btn4.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_item_banner.xml.flat",
+        "source": "com.project189.app-main-76:/layout/item_banner.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_bed.png.flat",
+        "source": "com.project189.app-main-76:/drawable/bed.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_call.png.flat",
+        "source": "com.project189.app-main-76:/drawable/call.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_hourglass.png.flat",
+        "source": "com.project189.app-main-76:/drawable/hourglass.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_search_icon.png.flat",
+        "source": "com.project189.app-main-76:/drawable/search_icon.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_distance.png.flat",
+        "source": "com.project189.app-main-76:/drawable/distance.png"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.project189.app-main-76:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_activity_detail.xml.flat",
+        "source": "com.project189.app-main-76:/layout/activity_detail.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_fragment_cambodia.xml.flat",
+        "source": "com.project189.app-main-76:/layout/fragment_cambodia.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.project189.app-main-76:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.project189.app-merged_res-74:/layout_bottom_sheet_contact.xml.flat",
+        "source": "com.project189.app-main-76:/layout/bottom_sheet_contact.xml"
+    }
+]
