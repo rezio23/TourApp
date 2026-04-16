@@ -1,13 +1,15 @@
 package com.project189.ui.common
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.project189.databinding.BottomSheetContactBinding
 import com.project189.utils.dialPhone
-import com.project189.utils.sendSms
 
 class ContactBottomSheet : BottomSheetDialogFragment() {
 
@@ -42,15 +44,24 @@ class ContactBottomSheet : BottomSheetDialogFragment() {
         val name = arguments?.getString(ARG_NAME) ?: ""
 
         binding.tvGuideName.text = name
-        binding.tvPhone.text = phone
+        // Set the phone number directly as the button text
+        binding.btnCall.text = phone
 
         binding.btnCall.setOnClickListener {
             requireContext().dialPhone(phone)
             dismiss()
         }
 
-        binding.btnMessage.setOnClickListener {
-            requireContext().sendSms(phone)
+        binding.btnTelegram.setOnClickListener {
+            try {
+                // Formatting phone for Telegram (removing spaces/plus)
+                val cleanPhone = phone.replace("+", "").replace(" ", "")
+                val telegramUrl = "https://t.me/$cleanPhone"
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(telegramUrl))
+                startActivity(intent)
+            } catch (e: Exception) {
+                Toast.makeText(requireContext(), "Telegram not installed or invalid link", Toast.LENGTH_SHORT).show()
+            }
             dismiss()
         }
     }

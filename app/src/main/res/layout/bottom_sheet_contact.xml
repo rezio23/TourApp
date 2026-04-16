@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -13,32 +14,25 @@
         android:layout_height="4dp"
         android:background="@color/divider"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="24dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contact Guide"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="@color/text_primary"
-        android:layout_marginBottom="8dp" />
+        android:textColor="@color/text_primary" />
 
     <TextView
         android:id="@+id/tv_guide_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
+        android:textSize="16sp"
         android:textColor="@color/text_secondary"
-        android:layout_marginBottom="4dp" />
-
-    <TextView
-        android:id="@+id/tv_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:textColor="@color/text_secondary"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        tools:text="Sophea Khiev" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,29 +42,40 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_call"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Call"
+            android:layout_height="60dp"
+            android:layout_weight="1.2"
             android:layout_marginEnd="8dp"
-            app:cornerRadius="12dp"
+            app:cornerRadius="30dp"
             android:backgroundTint="@color/primary"
-            app:icon="@drawable/call"
-            app:iconGravity="textStart" />
+            android:textColor="@android:color/white"
+            app:icon="@drawable/ic_phone_white"
+            app:iconSize="22dp"
+            app:iconTint="@android:color/white"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="012 345 678" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_message"
+            android:id="@+id/btn_telegram"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Message"
             android:layout_marginStart="8dp"
-            app:cornerRadius="12dp"
-            android:backgroundTint="@color/primary_light"
-            android:textColor="@color/primary"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:icon="@drawable/message"
+            app:cornerRadius="30dp"
+            android:backgroundTint="#24A1DE"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/ic_telegram_white"
+            app:iconSize="22dp"
+            app:iconTint="@android:color/white"
             app:iconGravity="textStart"
-            app:strokeColor="@color/primary" />
+            app:iconPadding="10dp"
+            android:text="Telegram"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
