@@ -1,0 +1,58 @@
+package com.project189.ui.cambodia
+
+import android.content.res.ColorStateList
+import android.graphics.Color
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
+import com.project189.R
+import com.project189.databinding.ItemFilterBinding
+
+class FilterAdapter(
+    private val filters: List<String>,
+    private val onFilterSelected: (String) -> Unit
+) : RecyclerView.Adapter<FilterAdapter.FilterViewHolder>() {
+
+    private var selectedPosition = 0
+
+    inner class FilterViewHolder(private val binding: ItemFilterBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        
+        fun bind(filter: String, position: Int) {
+            binding.tvFilterName.text = filter
+            
+            val isSelected = selectedPosition == position
+            val context = binding.root.context
+            
+            if (isSelected) {
+                binding.cardFilter.setCardBackgroundColor(ContextCompat.getColor(context, R.color.primary))
+                binding.tvFilterName.setTextColor(Color.WHITE)
+                binding.cardFilter.strokeWidth = 0
+            } else {
+                binding.cardFilter.setCardBackgroundColor(Color.WHITE)
+                binding.tvFilterName.setTextColor(ContextCompat.getColor(context, R.color.text_secondary))
+                binding.cardFilter.strokeWidth = 2
+            }
+            
+            binding.root.setOnClickListener {
+                val oldPosition = selectedPosition
+                selectedPosition = position
+                notifyItemChanged(oldPosition)
+                notifyItemChanged(selectedPosition)
+                onFilterSelected(filter)
+            }
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilterViewHolder {
+        val binding = ItemFilterBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return FilterViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: FilterViewHolder, position: Int) {
+        holder.bind(filters[position], position)
+    }
+
+    override fun getItemCount() = filters.size
+}

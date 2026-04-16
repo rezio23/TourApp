@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/favoritesFragment"
-        android:icon="@drawable/fav_icon"
-        android:title="@string/nav_favorites" />
+        android:icon="@drawable/bottom_btn4"
+        android:title="@string/nav_profile" />
 
 </menu>

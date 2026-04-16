@@ -1,11 +1,10 @@
 package com.project189.ui.detail
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
-import com.project189.R
 import com.project189.data.model.TourItem
 import com.project189.databinding.ActivityDetailBinding
 import com.project189.ui.common.ContactBottomSheet
@@ -66,15 +65,15 @@ class DetailActivity : AppCompatActivity() {
         }
 
         binding.btnBookNow.setOnClickListener {
-            // Future: navigate to booking flow
+            val intent = Intent(this, BookingActivity::class.java).apply {
+                putExtra(Constants.EXTRA_TOUR_JSON, Gson().toJson(tourItem))
+            }
+            startActivity(intent)
         }
     }
 
     private fun observeFavorite() {
         viewModel.isFavorite.observe(this) { isFav ->
-            binding.btnFavorite.setImageResource(
-                if (isFav) R.drawable.fav_icon else R.drawable.fav_icon
-            )
             binding.btnFavorite.alpha = if (isFav) 1.0f else 0.4f
         }
     }
