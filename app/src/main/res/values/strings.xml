@@ -3,6 +3,6 @@
     <string name="app_name">TourApp</string>
     <string name="nav_home">Home</string>
     <string name="nav_search">Search</string>
-    <string name="nav_favorites">Favorites</string>
+    <string name="nav_profile">Profile</string>
     <string name="nav_cambodia">Cambodia</string>
 </resources>

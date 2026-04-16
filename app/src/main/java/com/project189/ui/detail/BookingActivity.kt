@@ -1,6 +1,7 @@
 package com.project189.ui.detail
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -20,9 +21,9 @@ class BookingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBookingBinding
     private lateinit var tourItem: TourItem
 
-    // Replace with your actual Bot Token and Chat ID
-    private val BOT_TOKEN = "YOUR_BOT_TOKEN"
-    private val CHAT_ID = "YOUR_CHAT_ID"
+    // Bot Token and Chat ID
+    private val BOT_TOKEN = "8705575762:AAElKzeX67gUNw6dgUbTORXLtPj5Q3eATC0"
+    private val CHAT_ID = "1453582611"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,25 +78,49 @@ class BookingActivity : AppCompatActivity() {
 
     private fun sendTelegramMessage(message: String) {
         lifecycleScope.launch {
-            val success = withContext(Dispatchers.IO) {
+            val result = withContext(Dispatchers.IO) {
+                var conn: HttpURLConnection? = null
                 try {
-                    val urlString = "https://api.telegram.org/bot$BOT_TOKEN/sendMessage?chat_id=$CHAT_ID&text=${URLEncoder.encode(message, "UTF-8")}&parse_mode=Markdown"
-                    val url = URL(urlString)
-                    val conn = url.openConnection() as HttpURLConnection
-                    conn.requestMethod = "GET"
+                    val url = URL("https://api.telegram.org/bot$BOT_TOKEN/sendMessage")
+                    conn = url.openConnection() as HttpURLConnection
+                    conn.requestMethod = "POST"
+                    conn.doOutput = true
+                    conn.connectTimeout = 15000
+                    conn.readTimeout = 15000
+                    conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded")
+
+                    val postData = "chat_id=$CHAT_ID&text=${URLEncoder.encode(message, "UTF-8")}&parse_mode=Markdown"
+                    conn.outputStream.use { os ->
+                        os.write(postData.toByteArray(Charsets.UTF_8))
+                    }
+
                     val responseCode = conn.responseCode
-                    responseCode == HttpURLConnection.HTTP_OK
+                    if (responseCode == HttpURLConnection.HTTP_OK) {
+                        "SUCCESS"
+                    } else {
+                        val errorStream = conn.errorStream?.bufferedReader()?.readText() ?: "Unknown error"
+                        Log.e("BookingActivity", "Telegram API Error: $errorStream")
+                        "API_ERROR: $responseCode - $errorStream"
+                    }
                 } catch (e: Exception) {
-                    e.printStackTrace()
-                    false
+                    Log.e("BookingActivity", "Network Exception", e)
+                    "EXCEPTION: ${e.message}"
+                } finally {
+                    conn?.disconnect()
                 }
             }
 
-            if (success) {
-                Toast.makeText(this@BookingActivity, "Booking sent successfully!", Toast.LENGTH_LONG).show()
-                finish()
-            } else {
-                Toast.makeText(this@BookingActivity, "Failed to send booking. Check your connection or Bot Token.", Toast.LENGTH_LONG).show()
+            when {
+                result == "SUCCESS" -> {
+                    Toast.makeText(this@BookingActivity, "Booking sent successfully!", Toast.LENGTH_LONG).show()
+                    finish()
+                }
+                result.startsWith("API_ERROR") -> {
+                    Toast.makeText(this@BookingActivity, "Telegram API Error. Please check your Bot Token and Chat ID.", Toast.LENGTH_LONG).show()
+                }
+                else -> {
+                    Toast.makeText(this@BookingActivity, "Network Error: Could not reach Telegram. Please check your internet connection.", Toast.LENGTH_LONG).show()
+                }
             }
         }
     }

@@ -13,10 +13,6 @@ class TourRepository(private val context: Context) {
     private val db = AppDatabase.getDatabase(context)
     private val favoriteDao = db.favoriteDao()
 
-    // ─────────────────────────────────────────────
-    // LOCAL JSON  (swap section below for Firebase)
-    // ─────────────────────────────────────────────
-
     private fun loadDatabase(): TourDatabase {
         val json = context.assets.open("database.json")
             .bufferedReader()
@@ -52,40 +48,6 @@ class TourRepository(private val context: Context) {
                 it.address.contains(query, ignoreCase = true)
             }
     }
-
-    // ─────────────────────────────────────────────
-    // TODO: FIREBASE MIGRATION
-    //
-    // Replace the loadDatabase() calls above with:
-    //
-    // val firestore = FirebaseFirestore.getInstance()
-    //
-    // suspend fun getBanners(): List<Banner> = withContext(Dispatchers.IO) {
-    //     firestore.collection("Banner").get().await()
-    //         .toObjects(Banner::class.java)
-    // }
-    //
-    // suspend fun getCategories(): List<Category> = withContext(Dispatchers.IO) {
-    //     firestore.collection("Category").get().await()
-    //         .toObjects(Category::class.java)
-    // }
-    //
-    // suspend fun getAllItems(): List<TourItem> = withContext(Dispatchers.IO) {
-    //     firestore.collection("Item").get().await()
-    //         .toObjects(TourItem::class.java)
-    // }
-    //
-    // Add to app/build.gradle.kts:
-    //   implementation("com.google.firebase:firebase-firestore-ktx:24.10.0")
-    //   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
-    //
-    // Add to build.gradle.kts (root):
-    //   id("com.google.gms.google-services") version "4.4.0" apply false
-    // ─────────────────────────────────────────────
-
-    // ─────────────────────────────────────────────
-    // FAVORITES (Room)
-    // ─────────────────────────────────────────────
 
     fun getFavorites() = favoriteDao.getAllFavorites()
 
