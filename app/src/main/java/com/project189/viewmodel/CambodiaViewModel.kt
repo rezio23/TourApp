@@ -20,14 +20,15 @@ class CambodiaViewModel(application: Application) : AndroidViewModel(application
     val isLoading: LiveData<Boolean> = _isLoading
 
     init {
-        loadCambodiaDestinations()
+        loadAllDestinations()
     }
 
-    private fun loadCambodiaDestinations() {
+    private fun loadAllDestinations() {
         viewModelScope.launch {
             _isLoading.value = true
+            // Load all items to match the "All Tours" content from the Home page
             val allItems = repository.getAllItems()
-            _items.value = allItems.filter { it.address.contains("Cambodia", ignoreCase = true) }
+            _items.value = allItems
             _isLoading.value = false
         }
     }

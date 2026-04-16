@@ -130,11 +130,14 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tv_see_all_tours"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="See All"
                 android:textSize="13sp"
-                android:textColor="@color/primary" />
+                android:textColor="@color/primary"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
 
         </LinearLayout>
 
@@ -181,11 +184,14 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tv_see_all_popular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="See All"
                 android:textSize="13sp"
-                android:textColor="@color/primary" />
+                android:textColor="@color/primary"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground" />
 
         </LinearLayout>
 
