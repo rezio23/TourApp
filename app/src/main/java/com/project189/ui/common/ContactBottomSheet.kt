@@ -54,9 +54,8 @@ class ContactBottomSheet : BottomSheetDialogFragment() {
 
         binding.btnTelegram.setOnClickListener {
             try {
-                // Formatting phone for Telegram (removing spaces/plus)
-                val cleanPhone = phone.replace("+", "").replace(" ", "")
-                val telegramUrl = "https://t.me/$cleanPhone"
+                // Using your specific link for all Telegram contacts
+                val telegramUrl = "https://t.me/vichhean_som_bath"
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(telegramUrl))
                 startActivity(intent)
             } catch (e: Exception) {

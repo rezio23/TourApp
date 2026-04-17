@@ -34,6 +34,12 @@ class CambodiaFragment : Fragment() {
         setupTourList()
         setupFilters()
         observeData()
+
+        // Handle direct category selection from Home screen
+        arguments?.getString("category_name")?.let { category ->
+            viewModel.filterByCategory(category)
+            filterAdapter.setSelectedCategory(category)
+        }
     }
 
     private fun setupTourList() {

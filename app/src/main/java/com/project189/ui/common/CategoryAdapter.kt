@@ -1,10 +1,13 @@
 package com.project189.ui.common
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.project189.R
 import com.project189.data.model.Category
 import com.project189.databinding.ItemCategoryBinding
 import com.project189.utils.loadImage
@@ -25,6 +28,13 @@ class CategoryAdapter : ListAdapter<Category, CategoryAdapter.CategoryViewHolder
         fun bind(category: Category) {
             binding.tvCategoryName.text = category.name
             binding.ivCategoryIcon.loadImage(category.imagePath)
+
+            binding.root.setOnClickListener {
+                val bundle = Bundle().apply {
+                    putString("category_name", category.name)
+                }
+                it.findNavController().navigate(R.id.cambodiaFragment, bundle)
+            }
         }
     }
 

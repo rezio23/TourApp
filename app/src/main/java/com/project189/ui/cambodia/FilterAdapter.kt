@@ -1,6 +1,5 @@
 package com.project189.ui.cambodia
 
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -15,6 +14,16 @@ class FilterAdapter(
 ) : RecyclerView.Adapter<FilterAdapter.FilterViewHolder>() {
 
     private var selectedPosition = 0
+
+    fun setSelectedCategory(category: String) {
+        val position = filters.indexOf(category)
+        if (position != -1) {
+            val oldPosition = selectedPosition
+            selectedPosition = position
+            notifyItemChanged(oldPosition)
+            notifyItemChanged(selectedPosition)
+        }
+    }
 
     inner class FilterViewHolder(private val binding: ItemFilterBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -36,11 +45,13 @@ class FilterAdapter(
             }
             
             binding.root.setOnClickListener {
-                val oldPosition = selectedPosition
-                selectedPosition = position
-                notifyItemChanged(oldPosition)
-                notifyItemChanged(selectedPosition)
-                onFilterSelected(filter)
+                if (selectedPosition != position) {
+                    val oldPosition = selectedPosition
+                    selectedPosition = position
+                    notifyItemChanged(oldPosition)
+                    notifyItemChanged(selectedPosition)
+                    onFilterSelected(filter)
+                }
             }
         }
     }

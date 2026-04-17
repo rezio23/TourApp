@@ -1,31 +1,31 @@
 {
   "Banner": [
     {
-      "url": "https://images.unsplash.com/photo-1544376374-6b8ac56652b2?q=80&w=2000&auto=format&fit=crop"
+      "url": "cambodia_banner2.jpg"
     },
     {
-      "url": "https://images.unsplash.com/photo-1563245339-6b2e44c2020a?q=80&w=2000&auto=format&fit=crop"
+      "url": "cambodia_banner1.jpg"
     }
   ],
   "Category": [
     {
       "Id": 0,
-      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/cat1.png?alt=media&token=8988a93d-9257-443c-966d-5a3e0af47c11",
+      "ImagePath": "cat1.png",
       "Name": "Beach"
     },
     {
       "Id": 1,
-      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/cat2.png?alt=media&token=07df10c5-d465-47f4-a536-923a6c608d5f",
+      "ImagePath": "cat2.png",
       "Name": "Camp"
     },
     {
       "Id": 2,
-      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/cat3.png?alt=media&token=d02eaedc-97e2-43b7-b746-4d0f50848831",
+      "ImagePath": "cat3.png",
       "Name": "Jungle"
     },
     {
       "Id": 4,
-      "ImagePath": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/cat5.png?alt=media&token=a22025c3-c1cc-4641-a095-1a24dfa43f2f",
+      "ImagePath": "cat5.png",
       "Name": "Mountain"
     }
   ],
@@ -37,14 +37,14 @@
       "description": "Angkor Wat is a magnificent temple complex in Cambodia. It is surrounded by lush Jungle and ancient history.",
       "distance": "5Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1600121848594-d8644e576ec9?auto=format&fit=crop&q=80&w=1000",
+      "pic": "angkor_wat.jpg",
       "price": 50,
       "score": 4.9,
       "timeTour": "5:00 AM",
       "title": "Angkor Wat Temple",
       "tourGuideName": "Sophea Khiev",
       "tourGuidePhone": "012345678",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Phnom Penh, Cambodia",
@@ -53,14 +53,14 @@
       "description": "The Royal Palace of Cambodia is a complex of buildings which serves as the royal residence of the King of Cambodia.",
       "distance": "2Km",
       "duration": "4H",
-      "pic": "https://images.unsplash.com/photo-1563245339-6b2e44c2020a?auto=format&fit=crop&q=80&w=1000",
+      "pic": "royal_palace.jpg",
       "price": 20,
       "score": 4.7,
       "timeTour": "8:00 AM",
       "title": "Royal Palace",
       "tourGuideName": "Dara Vong",
       "tourGuidePhone": "087654321",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Sihanoukville, Cambodia",
@@ -69,14 +69,14 @@
       "description": "Koh Rong is the most beautiful island in Cambodia. Perfect for a Beach vacation with crystal clear water.",
       "distance": "25Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1541484407981-d14743ec37d3?auto=format&fit=crop&q=80&w=1000",
+      "pic": "koh_rong.jpg",
       "price": 120,
       "score": 4.8,
       "timeTour": "7:00 AM",
       "title": "Koh Rong Island",
       "tourGuideName": "Chanthou Kim",
       "tourGuidePhone": "099112233",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Kampot, Cambodia",
@@ -85,14 +85,14 @@
       "description": "Bokor Mountain offers a cool climate and historical buildings. A great place to explore the Mountain scenery.",
       "distance": "40Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1544376374-6b8ac56652b2?auto=format&fit=crop&q=80&w=1000",
+      "pic": "bokor_mountain.jpg",
       "price": 35,
       "score": 4.6,
       "timeTour": "9:00 AM",
       "title": "Bokor Mountain",
       "tourGuideName": "Sok Cham",
       "tourGuidePhone": "010556677",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Kompong Speu, Cambodia",
@@ -101,14 +101,14 @@
       "description": "Kirirom National Park is famous for its pine trees. It is the best place to Camp and enjoy nature.",
       "distance": "100Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1496080174650-637e3f22fa03?auto=format&fit=crop&q=80&w=1000",
+      "pic": "kirirom_park.jpg",
       "price": 45,
       "score": 4.5,
       "timeTour": "8:30 AM",
       "title": "Kirirom National Park",
       "tourGuideName": "Piseth Heang",
       "tourGuidePhone": "011223344",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Kep, Cambodia",
@@ -117,14 +117,14 @@
       "description": "Kep Beach is known for its seafood and relaxing atmosphere. A popular Beach destination.",
       "distance": "160Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1000",
+      "pic": "kep_beach.png",
       "price": 30,
       "score": 4.4,
       "timeTour": "10:00 AM",
       "title": "Kep Beach",
       "tourGuideName": "Maly Suos",
       "tourGuidePhone": "016778899",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Mondulkiri, Cambodia",
@@ -133,14 +133,14 @@
       "description": "Explore the deep Jungle of Mondulkiri and visit waterfalls.",
       "distance": "350Km",
       "duration": "3D / 2N",
-      "pic": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000",
+      "pic": "mondulkiri_trek.jpg",
       "price": 150,
       "score": 4.9,
       "timeTour": "6:00 AM",
       "title": "Mondulkiri Jungle Trek",
       "tourGuideName": "Vutha Seng",
       "tourGuidePhone": "017889900",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Siem Reap, Cambodia",
@@ -149,14 +149,14 @@
       "description": "Kulen Mountain is a sacred place with waterfalls. A great Mountain trip.",
       "distance": "60Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1000&auto=format&fit=crop",
+      "pic": "kulen_mountain.jpg",
       "price": 40,
       "score": 4.7,
       "timeTour": "8:00 AM",
       "title": "Kulen Mountain",
       "tourGuideName": "Sophea Khiev",
       "tourGuidePhone": "012345678",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Preah Vihear, Cambodia",
@@ -165,14 +165,14 @@
       "description": "Preah Vihear Temple is located on a cliff top. A spectacular Mountain temple.",
       "distance": "400Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1569668446402-e955e629d53c?q=80&w=1000&auto=format&fit=crop",
+      "pic": "preah_vihear.jpg",
       "price": 80,
       "score": 4.8,
       "timeTour": "7:00 AM",
       "title": "Preah Vihear Temple",
       "tourGuideName": "Dara Vong",
       "tourGuidePhone": "087654321",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Koh Kong, Cambodia",
@@ -181,14 +181,14 @@
       "description": "Cardamom Mountains are perfect for Jungle trekking and exploration.",
       "distance": "300Km",
       "duration": "3D / 2N",
-      "pic": "https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=1000&auto=format&fit=crop",
+      "pic": "cardamom_jungle.jpg",
       "price": 110,
       "score": 4.6,
       "timeTour": "6:30 AM",
       "title": "Cardamom Jungle Adventure",
       "tourGuideName": "Chanthou Kim",
       "tourGuidePhone": "099112233",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Rattanakiri, Cambodia",
@@ -197,14 +197,14 @@
       "description": "Yeak Laom Lake is a volcanic lake surrounded by Jungle.",
       "distance": "500Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1581850518616-bcb8188bc443?q=80&w=1000&auto=format&fit=crop",
+      "pic": "yeak_laom.jpg",
       "price": 90,
       "score": 4.5,
       "timeTour": "8:00 AM",
       "title": "Yeak Laom Jungle Lake",
       "tourGuideName": "Vutha Seng",
       "tourGuidePhone": "017889900",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Siem Reap, Cambodia",
@@ -213,14 +213,14 @@
       "description": "Koh Ker is an ancient temple complex in the deep Jungle.",
       "distance": "120Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1621259182978-f033152f53b1?q=80&w=1000&auto=format&fit=crop",
+      "pic": "koh_ker.jpg",
       "price": 45,
       "score": 4.7,
       "timeTour": "7:30 AM",
       "title": "Koh Ker Jungle Temples",
       "tourGuideName": "Sophea Khiev",
       "tourGuidePhone": "012345678",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Koh Rong Samloem, Cambodia",
@@ -229,14 +229,14 @@
       "description": "Enjoy a peaceful Beach stay at Saracen Bay.",
       "distance": "30Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1000",
+      "pic": "saracen_bay.jpg",
       "price": 100,
       "score": 4.9,
       "timeTour": "9:00 AM",
       "title": "Saracen Bay Beach",
       "tourGuideName": "Maly Suos",
       "tourGuidePhone": "016778899",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Koh Kong, Cambodia",
@@ -245,14 +245,14 @@
       "description": "Tatait Waterfall is a beautiful spot to Camp in nature.",
       "distance": "280Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1496080174650-637e3f22fa03?auto=format&fit=crop&q=80&w=1000",
+      "pic": "tatai_river.jpg",
       "price": 70,
       "score": 4.6,
       "timeTour": "8:30 AM",
       "title": "Tatai River Camp",
       "tourGuideName": "Piseth Heang",
       "tourGuidePhone": "011223344",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Pursat, Cambodia",
@@ -261,14 +261,14 @@
       "description": "Phnom Aural is the highest Mountain peak in Cambodia. Perfect for a Camp.",
       "distance": "200Km",
       "duration": "3D / 2N",
-      "pic": "https://images.unsplash.com/photo-1544376374-6b8ac56652b2?auto=format&fit=crop&q=80&w=1000",
+      "pic": "phnom_aural.jpg",
       "price": 120,
       "score": 4.5,
       "timeTour": "5:00 AM",
       "title": "Phnom Aural Mountain",
       "tourGuideName": "Sok Cham",
       "tourGuidePhone": "010556677",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Battambang, Cambodia",
@@ -277,14 +277,14 @@
       "description": "Phnom Sampeau offers amazing views. A historic Mountain site.",
       "distance": "300Km",
       "duration": "4H",
-      "pic": "https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1000&auto=format&fit=crop",
+      "pic": "phnom_sampeau.jpg",
       "price": 25,
       "score": 4.6,
       "timeTour": "4:00 PM",
       "title": "Phnom Sampeau Mountain",
       "tourGuideName": "Dara Vong",
       "tourGuidePhone": "087654321",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Kampong Thom, Cambodia",
@@ -293,14 +293,14 @@
       "description": "Sambor Prei Kuk is a Jungle temple complex.",
       "distance": "200Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1621259182978-f033152f53b1?q=80&w=1000&auto=format&fit=crop",
+      "pic": "sambor_prei_kuk.jpg",
       "price": 35,
       "score": 4.4,
       "timeTour": "8:30 AM",
       "title": "Sambor Prei Kuk Jungle",
       "tourGuideName": "Vutha Seng",
       "tourGuidePhone": "017889900",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Koh Kong, Cambodia",
@@ -309,14 +309,14 @@
       "description": "Chi Phat is an eco-tourism site. Great for Jungle trekking.",
       "distance": "250Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=1000&auto=format&fit=crop",
+      "pic": "chi_phat.jpg",
       "price": 55,
       "score": 4.7,
       "timeTour": "7:00 AM",
       "title": "Chi Phat Jungle Eco",
       "tourGuideName": "Chanthou Kim",
       "tourGuidePhone": "099112233",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Kep, Cambodia",
@@ -325,14 +325,14 @@
       "description": "Koh Tonsay (Rabbit Island) has a quiet Beach area.",
       "distance": "165Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1000",
+      "pic": "rabbit_island.jpg",
       "price": 20,
       "score": 4.5,
       "timeTour": "9:30 AM",
       "title": "Koh Tonsay Beach",
       "tourGuideName": "Maly Suos",
       "tourGuidePhone": "016778899",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Stung Treng, Cambodia",
@@ -341,14 +341,14 @@
       "description": "Virachey National Park is a vast Jungle wilderness. Best for a Camp.",
       "distance": "550Km",
       "duration": "4D / 3N",
-      "pic": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000",
+      "pic": "virachey_park.jpg",
       "price": 180,
       "score": 4.8,
       "timeTour": "6:00 AM",
       "title": "Virachey Jungle Camp",
       "tourGuideName": "Piseth Heang",
       "tourGuidePhone": "011223344",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     }
   ],
   "Location": [
@@ -361,16 +361,8 @@
       "loc": "Phnom Penh, Cambodia"
     },
     {
-      "Id": 2,
-      "loc": "Sihanoukville, Cambodia"
-    },
-    {
       "Id": 3,
       "loc": "Kampot, Cambodia"
-    },
-    {
-      "Id": 4,
-      "loc": "Kompong Speu, Cambodia"
     }
   ],
   "Popular": [
@@ -381,14 +373,14 @@
       "description": "Angkor Wat is a magnificent temple complex in Cambodia. It is surrounded by lush Jungle and ancient history.",
       "distance": "5Km",
       "duration": "1D / 0N",
-      "pic": "https://images.unsplash.com/photo-1600121848594-d8644e576ec9?auto=format&fit=crop&q=80&w=1000",
+      "pic": "angkor_wat.jpg",
       "price": 50,
       "score": 4.9,
       "timeTour": "5:00 AM",
       "title": "Angkor Wat Temple",
       "tourGuideName": "Sophea Khiev",
       "tourGuidePhone": "012345678",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     },
     {
       "address": "Sihanoukville, Cambodia",
@@ -397,30 +389,14 @@
       "description": "Koh Rong is the most beautiful island in Cambodia. Perfect for a Beach vacation with crystal clear water.",
       "distance": "25Km",
       "duration": "2D / 1N",
-      "pic": "https://images.unsplash.com/photo-1541484407981-d14743ec37d3?auto=format&fit=crop&q=80&w=1000",
+      "pic": "koh_rong.jpg",
       "price": 120,
       "score": 4.8,
       "timeTour": "7:00 AM",
       "title": "Koh Rong Island",
       "tourGuideName": "Chanthou Kim",
       "tourGuidePhone": "099112233",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
-    },
-    {
-      "address": "Phnom Penh, Cambodia",
-      "bed": 0,
-      "dateTour": "16 Oct 2024",
-      "description": "The Royal Palace of Cambodia is a complex of buildings which serves as the royal residence of the King of Cambodia.",
-      "distance": "2Km",
-      "duration": "4H",
-      "pic": "https://images.unsplash.com/photo-1563245339-6b2e44c2020a?auto=format&fit=crop&q=80&w=1000",
-      "price": 20,
-      "score": 4.7,
-      "timeTour": "8:00 AM",
-      "title": "Royal Palace",
-      "tourGuideName": "Dara Vong",
-      "tourGuidePhone": "087654321",
-      "tourGuidePic": "https://firebasestorage.googleapis.com/v0/b/project189-ede2a.appspot.com/o/profile.png?alt=media&token=fe709454-312a-4cf0-bb72-aa74037a700e"
+      "tourGuidePic": "profile.png"
     }
   ]
 }

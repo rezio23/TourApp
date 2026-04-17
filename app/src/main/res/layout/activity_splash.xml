@@ -13,46 +13,81 @@
         android:src="@drawable/intro_pic"
         android:contentDescription="@string/app_name" />
 
-    <ImageButton
-        android:id="@+id/btn_close"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="top|end"
-        android:layout_margin="24dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:padding="8dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/arrow_detail"
-        android:rotation="180"
-        app:tint="@color/white"
-        android:contentDescription="Close" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        android:padding="32dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textSize="36sp"
+            android:text="Login"
+            android:textSize="32sp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:shadowColor="#66000000"
-            android:shadowDx="2"
-            android:shadowDy="2"
-            android:shadowRadius="4" />
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:text="Login"
+            android:backgroundTint="@color/primary"
+            app:cornerRadius="12dp" />
 
         <TextView
+            android:id="@+id/tv_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Explore the World"
-            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:text="Don't have an account? Register"
             android:textColor="@color/white"
-            android:layout_marginTop="8dp" />
+            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 
