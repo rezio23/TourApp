@@ -9,7 +9,7 @@
     <item
         android:id="@+id/cambodiaFragment"
         android:icon="@drawable/location"
-        android:title="@string/nav_cambodia" />
+        android:title="@string/nav_country" />
 
     <item
         android:id="@+id/searchFragment"

@@ -33,12 +33,36 @@ class CambodiaFragment : Fragment() {
 
         setupTourList()
         setupFilters()
+        setupToggle()
         observeData()
 
-        // Handle direct category selection from Home screen
         arguments?.getString("category_name")?.let { category ->
             viewModel.filterByCategory(category)
             filterAdapter.setSelectedCategory(category)
+        }
+    }
+
+    private fun setupToggle() {
+        binding.toggleCountry.addOnButtonCheckedListener { _, checkedId, isChecked ->
+            if (checkedId != -1 && isChecked) {
+                when (checkedId) {
+                    binding.btnCambodia.id -> {
+                        viewModel.setCountry("Cambodia")
+                        binding.tvCountryTitle.text = "Cambodia"
+                        binding.tvCountrySubtitle.text = "Kingdom of Wonder"
+                    }
+                    binding.btnPhilippines.id -> {
+                        viewModel.setCountry("Philippines")
+                        binding.tvCountryTitle.text = "Philippines"
+                        binding.tvCountrySubtitle.text = "Pearl of the Orient"
+                    }
+                    binding.btnIndonesia.id -> {
+                        viewModel.setCountry("Indonesia")
+                        binding.tvCountryTitle.text = "Indonesia"
+                        binding.tvCountrySubtitle.text = "Emerald of the Equator"
+                    }
+                }
+            }
         }
     }
 

@@ -16,25 +16,67 @@
         android:paddingBottom="10dp"
         android:background="@color/white">
 
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedButton="@+id/btn_cambodia">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cambodia"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cambodia"
+                android:textSize="12sp"
+                app:cornerRadius="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_philippines"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Philippines"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_indonesia"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Indonesia"
+                android:textSize="12sp"
+                app:cornerRadius="8dp" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
         <TextView
+            android:id="@+id/tv_country_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cambodia"
-            android:textSize="28sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary" />
 
         <TextView
+            android:id="@+id/tv_country_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Discover the Kingdom of Wonder"
-            android:textSize="14sp"
+            android:text="Kingdom of Wonder"
+            android:textSize="13sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="2dp" />
 
     </LinearLayout>
 
-    <!-- Filters Section -->
+    <!-- Filters Section (Beach, Camp, etc) -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_filters"
         android:layout_width="match_parent"
@@ -70,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="No tours found in this category"
+            android:text="No tours found"
             android:visibility="gone"
             android:textColor="@color/text_secondary" />
 

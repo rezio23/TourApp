@@ -25,18 +25,29 @@ class RegisterActivity : AppCompatActivity() {
             val password = binding.etPassword.text.toString().trim()
             val confirmPassword = binding.etConfirmPassword.text.toString().trim()
 
+            // 1. All fields required
             if (username.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
                 Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
+            // 2. Username must be Capitalized (First letter Uppercase, rest lowercase for better display)
+            // Or if you mean MUST be entered as "Capitalized" by user:
+            if (!username[0].isUpperCase()) {
+                Toast.makeText(this, "Username must start with a Capital letter", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // 3. Email must end with @gmail.com
             if (!email.endsWith("@gmail.com")) {
                 Toast.makeText(this, "Email must end with @gmail.com", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
-            if (password.length < 6) {
-                Toast.makeText(this, "Password must be at least 6 characters", Toast.LENGTH_SHORT).show()
+            // 4. Password validation (8-16 digits, Capital, Small, Number)
+            val passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$".toRegex()
+            if (!password.matches(passwordRegex)) {
+                Toast.makeText(this, "Password must be 8-16 characters with Uppercase, Lowercase, and a Number", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
@@ -49,7 +60,6 @@ class RegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Update Firebase Profile with Username
                         val user = auth.currentUser
                         val profileUpdates = userProfileChangeRequest {
                             displayName = username

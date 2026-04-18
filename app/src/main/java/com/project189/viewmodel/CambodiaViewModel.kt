@@ -13,6 +13,8 @@ class CambodiaViewModel(application: Application) : AndroidViewModel(application
 
     private val repository = TourRepository(application)
     private var allDestinations: List<TourItem> = emptyList()
+    private var currentCountry = "Cambodia"
+    private var currentCategory = "All"
 
     private val _items = MutableLiveData<List<TourItem>>()
     val items: LiveData<List<TourItem>> = _items
@@ -28,20 +30,31 @@ class CambodiaViewModel(application: Application) : AndroidViewModel(application
         viewModelScope.launch {
             _isLoading.value = true
             allDestinations = repository.getAllItems()
-            _items.value = allDestinations
+            applyFilters()
             _isLoading.value = false
         }
     }
 
+    fun setCountry(country: String) {
+        currentCountry = country
+        applyFilters()
+    }
+
     fun filterByCategory(category: String) {
-        if (category == "All") {
-            _items.value = allDestinations
-        } else {
-            // Filter destinations by description or address since there's no explicit category field in TourItem
-            _items.value = allDestinations.filter { 
-                it.description.contains(category, ignoreCase = true) || 
-                it.address.contains(category, ignoreCase = true)
+        currentCategory = category
+        applyFilters()
+    }
+
+    private fun applyFilters() {
+        var filteredList = allDestinations.filter { it.address.contains(currentCountry, ignoreCase = true) }
+
+        if (currentCategory != "All") {
+            filteredList = filteredList.filter {
+                it.description.contains(currentCategory, ignoreCase = true) ||
+                it.address.contains(currentCategory, ignoreCase = true)
             }
         }
+
+        _items.value = filteredList
     }
 }
