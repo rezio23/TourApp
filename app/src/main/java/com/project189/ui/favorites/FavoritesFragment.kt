@@ -65,11 +65,14 @@ class FavoritesFragment : Fragment() {
 
     private fun setupProfileInfo() {
         val user = auth.currentUser
-        val username = user?.displayName ?: user?.email?.substringBefore("@") ?: "User"
+        // Force a profile reload to ensure we have the latest display name
+        user?.reload()?.addOnCompleteListener {
+            val username = user.displayName ?: user.email?.substringBefore("@") ?: "User"
 
-        // Capitalize the username
-        binding.tvUsername.text = username.replaceFirstChar {
-            if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
+            // Capitalize the username
+            binding.tvUsername.text = username.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString()
+            }
         }
 
         binding.tvEmail.text = user?.email ?: "No email"
