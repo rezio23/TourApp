@@ -34,7 +34,6 @@ class FavoriteAdapter(
             binding.tvTitle.text = entity.title
             binding.tvAddress.text = entity.address
             binding.tvPrice.text = "$${entity.price.toInt()}"
-            binding.tvRating.text = entity.score.toString()
 
             val tourItem = entity.toTourItem()
 

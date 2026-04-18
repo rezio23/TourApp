@@ -33,7 +33,7 @@ class SplashActivity : AppCompatActivity() {
         }
 
         binding.tvRegister.setOnClickListener {
-            Toast.makeText(this, "Registration feature coming soon!", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
     }
 }

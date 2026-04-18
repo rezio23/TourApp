@@ -1,10 +1,16 @@
 {
   "Banner": [
     {
+      "url": "cambodia_banner1.jpg"
+    },
+    {
       "url": "cambodia_banner2.jpg"
     },
     {
-      "url": "cambodia_banner1.jpg"
+      "url": "banner1.png"
+    },
+    {
+      "url": "banner2.png"
     }
   ],
   "Category": [
@@ -363,6 +369,10 @@
     {
       "Id": 3,
       "loc": "Kampot, Cambodia"
+    },
+    {
+      "Id": 4,
+      "loc": "Kompong Speu, Cambodia"
     }
   ],
   "Popular": [
