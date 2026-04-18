@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.project189" />
+                  <option name="mobileSdkAppId" value="1:268784784318:android:04b1092814a28f753b1fef" />
+                  <option name="projectId" value="camtourapp" />
+                  <option name="projectNumber" value="268784784318" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

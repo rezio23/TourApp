@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "268784784318",
+    "project_id": "camtourapp",
+    "storage_bucket": "camtourapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268784784318:android:520c8508cdfa35c03b1fef",
+        "android_client_info": {
+          "package_name": "Cam.TourApp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfySAmxFXBJuzJu2eGGMu3hfvb04LBCxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268784784318:android:04b1092814a28f753b1fef",
+        "android_client_info": {
+          "package_name": "com.project189"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfySAmxFXBJuzJu2eGGMu3hfvb04LBCxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

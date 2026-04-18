@@ -32,6 +32,7 @@
                 android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textPersonName"
                 android:textColor="@color/text_primary" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,6 +61,22 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
