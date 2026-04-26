@@ -2,6 +2,7 @@ package com.project189.ui.detail
 
 import android.os.Bundle
 import android.util.Log
+import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
@@ -55,8 +56,38 @@ class BookingActivity : AppCompatActivity() {
             val email = binding.etEmail.text.toString().trim()
             val note = binding.etNote.text.toString().trim()
 
+            // 1. All fields required (except Note)
             if (name.isEmpty() || phone.isEmpty() || email.isEmpty()) {
                 Toast.makeText(this, "Please fill in all required fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // 2. Fullname must be at least 2 characters
+            if (name.length < 2) {
+                Toast.makeText(this, "Full name must be at least 2 characters", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // 3. Phone must be 9-10 digits
+            if (!phone.all { it.isDigit() } || phone.length !in 9..10) {
+                Toast.makeText(this, "Phone number must be 9-10 digits", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // 4. Email validation
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                Toast.makeText(this, "Invalid email format", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            val usernamePart = email.substringBefore("@")
+            if (usernamePart != usernamePart.lowercase()) {
+                Toast.makeText(this, "Email username must be in lowercase", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (!email.endsWith("@gmail.com") && !email.endsWith("@example.com")) {
+                Toast.makeText(this, "Email must end with @gmail.com or @example.com", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
