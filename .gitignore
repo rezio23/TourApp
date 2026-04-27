@@ -12,6 +12,7 @@ captures/
 
 # Local machine/config files
 local.properties
+secrets.gradle
 *.log
 
 # IDE files

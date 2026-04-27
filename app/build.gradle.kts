@@ -1,9 +1,38 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
     id("com.google.gms.google-services")
 }
+
+val localProperties = Properties().apply {
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { load(it) }
+    }
+}
+
+val secretsGradleFile = rootProject.file("secrets.gradle")
+if (secretsGradleFile.exists()) {
+    apply(from = secretsGradleFile)
+}
+
+fun readSecret(key: String): String {
+    return (findProperty(key) as String?)?.takeIf { it.isNotBlank() }
+        ?: localProperties.getProperty(key)?.takeIf { it.isNotBlank() }
+        ?: System.getenv(key)?.takeIf { it.isNotBlank() }
+        ?: ""
+}
+
+fun escapeForBuildConfig(value: String): String {
+    return value.replace("\\", "\\\\").replace("\"", "\\\"")
+}
+
+val telegramBotToken = escapeForBuildConfig(readSecret("TELEGRAM_BOT_TOKEN"))
+val telegramChatId = escapeForBuildConfig(readSecret("TELEGRAM_CHAT_ID"))
+val firebaseDatabaseUrl = escapeForBuildConfig(readSecret("FIREBASE_DATABASE_URL"))
 
 android {
     namespace = "com.project189"
@@ -16,6 +45,10 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "TELEGRAM_BOT_TOKEN", "\"$telegramBotToken\"")
+        buildConfigField("String", "TELEGRAM_CHAT_ID", "\"$telegramChatId\"")
+        buildConfigField("String", "FIREBASE_DATABASE_URL", "\"$firebaseDatabaseUrl\"")
     }
 
     buildTypes {
@@ -39,6 +72,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -85,6 +119,7 @@ dependencies {
     // Firebase
     implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-database-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-storage-ktx")
 

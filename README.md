@@ -53,8 +53,16 @@ The app uses a professional **Teal Blue** theme (`#4FA6A8`) designed for a calm 
 ## ⚙️ Configuration
 To get the project running with your own backend:
 1. Replace the `google-services.json` in the `app/` folder.
-2. Update the `BOT_TOKEN` and `CHAT_ID` in `BookingActivity.kt` for Telegram integration.
-3. Ensure local images are placed in `app/src/main/assets/`.
+2. Copy `secrets.gradle.example` to `secrets.gradle` (already ignored by Git).
+3. Add your local values in `secrets.gradle`:
+   - `TELEGRAM_BOT_TOKEN`
+   - `TELEGRAM_CHAT_ID`
+   - `FIREBASE_DATABASE_URL` (optional if your Firebase default config already includes it)
+4. Optionally store the same keys in `local.properties` or environment variables. The build reads values in this order:
+   - `secrets.gradle`
+   - `local.properties`
+   - environment variables
+5. Ensure local images are placed in `app/src/main/assets/`.
 
 ---
 
