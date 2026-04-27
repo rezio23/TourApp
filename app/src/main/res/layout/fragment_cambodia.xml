@@ -26,14 +26,22 @@
             app:checkedButton="@+id/btn_cambodia">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_all"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:text="All"
+                android:textSize="11sp" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_cambodia"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Cambodia"
-                android:textSize="12sp"
-                app:cornerRadius="8dp" />
+                android:textSize="11sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_philippines"
@@ -42,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Philippines"
-                android:textSize="12sp" />
+                android:textSize="11sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_indonesia"
@@ -51,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Indonesia"
-                android:textSize="12sp"
+                android:textSize="11sp"
                 app:cornerRadius="8dp" />
 
         </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -60,7 +68,7 @@
             android:id="@+id/tv_country_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cambodia"
+            android:text="All Destinations"
             android:textSize="24sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary" />
@@ -69,14 +77,14 @@
             android:id="@+id/tv_country_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kingdom of Wonder"
+            android:text="Explore the best of Southeast Asia"
             android:textSize="13sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="2dp" />
 
     </LinearLayout>
 
-    <!-- Filters Section (Beach, Camp, etc) -->
+    <!-- Filters Section -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_filters"
         android:layout_width="match_parent"

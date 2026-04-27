@@ -42,11 +42,22 @@
 
             </LinearLayout>
 
+            <ImageButton
+                android:id="@+id/btn_theme_toggle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_sun"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:tint="@color/primary"
+                android:contentDescription="Toggle Theme" />
+
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/bell_icon"
                 android:padding="4dp"
+                android:layout_marginStart="8dp"
                 android:contentDescription="Notifications" />
 
         </LinearLayout>

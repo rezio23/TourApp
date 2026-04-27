@@ -13,7 +13,7 @@ class CambodiaViewModel(application: Application) : AndroidViewModel(application
 
     private val repository = TourRepository(application)
     private var allDestinations: List<TourItem> = emptyList()
-    private var currentCountry = "Cambodia"
+    private var currentCountry = "All"
     private var currentCategory = "All"
 
     private val _items = MutableLiveData<List<TourItem>>()
@@ -46,7 +46,11 @@ class CambodiaViewModel(application: Application) : AndroidViewModel(application
     }
 
     private fun applyFilters() {
-        var filteredList = allDestinations.filter { it.address.contains(currentCountry, ignoreCase = true) }
+        var filteredList = if (currentCountry == "All") {
+            allDestinations.shuffled() // Randomize when "All" is selected
+        } else {
+            allDestinations.filter { it.address.contains(currentCountry, ignoreCase = true) }
+        }
 
         if (currentCategory != "All") {
             filteredList = filteredList.filter {

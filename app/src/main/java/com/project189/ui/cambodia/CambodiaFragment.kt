@@ -46,6 +46,11 @@ class CambodiaFragment : Fragment() {
         binding.toggleCountry.addOnButtonCheckedListener { _, checkedId, isChecked ->
             if (checkedId != -1 && isChecked) {
                 when (checkedId) {
+                    binding.btnAll.id -> {
+                        viewModel.setCountry("All")
+                        binding.tvCountryTitle.text = "All Destinations"
+                        binding.tvCountrySubtitle.text = "Explore the best of Southeast Asia"
+                    }
                     binding.btnCambodia.id -> {
                         viewModel.setCountry("Cambodia")
                         binding.tvCountryTitle.text = "Cambodia"

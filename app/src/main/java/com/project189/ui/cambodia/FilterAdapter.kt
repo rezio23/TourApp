@@ -39,8 +39,12 @@ class FilterAdapter(
                 binding.tvFilterName.setTextColor(Color.WHITE)
                 binding.cardFilter.strokeWidth = 0
             } else {
-                binding.cardFilter.setCardBackgroundColor(Color.WHITE)
-                binding.tvFilterName.setTextColor(ContextCompat.getColor(context, R.color.text_secondary))
+                // Adapt to theme colors (Dark mode aware)
+                val bgColor = ContextCompat.getColor(context, R.color.white)
+                val textColor = ContextCompat.getColor(context, R.color.text_secondary)
+                
+                binding.cardFilter.setCardBackgroundColor(bgColor)
+                binding.tvFilterName.setTextColor(textColor)
                 binding.cardFilter.strokeWidth = 2
             }
             

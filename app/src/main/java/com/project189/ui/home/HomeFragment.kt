@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -42,6 +43,7 @@ class HomeFragment : Fragment() {
         setupTourList()
         setupPopularList()
         setupClickListeners()
+        setupThemeToggle()
         observeData()
     }
 
@@ -82,6 +84,20 @@ class HomeFragment : Fragment() {
         
         binding.tvSeeAllPopular.setOnClickListener {
             findNavController().navigate(R.id.cambodiaFragment)
+        }
+    }
+
+    private fun setupThemeToggle() {
+        // Set initial icon
+        val isDarkMode = AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
+        binding.btnThemeToggle.setImageResource(if (isDarkMode) R.drawable.ic_sun else R.drawable.ic_moon)
+
+        binding.btnThemeToggle.setOnClickListener {
+            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
         }
     }
 
